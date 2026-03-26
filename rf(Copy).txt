@@ -684,7 +684,7 @@ local CoreGui = getService("CoreGui")
 
 -- Interface Management
 
-local Zlib = useStudio and script.Parent:FindFirstChild('Zlib') or game:GetObjects("rbxassetid://108440")[1]
+local Zlib = useStudio and script.Parent:FindFirstChild('Zlib') or game:GetObjects("rbxassetid://10804741440")[1]
 local buildAttempts = 0
 local correctBuild = false
 local warned
@@ -705,7 +705,7 @@ repeat
 		warned = true
 	end
 
-	toDestroy, Zlib = Zlib, useStudio and script.Parent:FindFirstChild('Zlib') or game:GetObjects("rbxassetid://108440")[1]
+	toDestroy, Zlib = Zlib, useStudio and script.Parent:FindFirstChild('Zlib') or game:GetObjects("rbxassetid://10804731440")[1]
 	if toDestroy and not useStudio then toDestroy:Destroy() end
 
 	buildAttempts = buildAttempts + 1
@@ -1289,7 +1289,7 @@ end
 
 local function Maximise()
 	Debounce = true
-	Topbar.ChangeSize.Image = "rbxassetid://"..108440
+	Topbar.ChangeSize.Image = "rbxassetid://"..10137941941
 
 	TweenService:Create(Topbar.UIStroke, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {Transparency = 1}):Play()
 	TweenService:Create(Main.Shadow.Image, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {ImageTransparency = 0.6}):Play()
@@ -1444,7 +1444,7 @@ end
 
 local function Minimise()
 	Debounce = true
-	Topbar.ChangeSize.Image = "rbxassetid://"..108440
+	Topbar.ChangeSize.Image = "rbxassetid://"..11036884234
 
 	Topbar.UIStroke.Color = SelectedTheme.ElementStroke
 
@@ -1811,7 +1811,7 @@ function ZlibLibrary:CreateWindow(Settings)
 		if not Passthrough then
 			local AttemptsRemaining = math.random(2, 5)
 			Zlib.Enabled = false
-			local KeyUI = useStudio and script.Parent:FindFirstChild('Key') or game:GetObjects("rbxassetid://108440")[1]
+			local KeyUI = useStudio and script.Parent:FindFirstChild('Key') or game:GetObjects("rbxassetid://11380036235")[1]
 
 			KeyUI.Enabled = true
 
