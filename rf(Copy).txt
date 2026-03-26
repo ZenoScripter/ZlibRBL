@@ -684,7 +684,7 @@ local CoreGui = getService("CoreGui")
 
 -- Interface Management
 
-local Zlib = useStudio and script.Parent:FindFirstChild('Zlib') or game:GetObjects("rbxassetid://10804741440")[1]
+local Zlib = useStudio and script.Parent:FindFirstChild('Zlib') or game:GetObjects("rbxassetid://9102092728")[1]
 local buildAttempts = 0
 local correctBuild = false
 local warned
@@ -705,7 +705,7 @@ repeat
 		warned = true
 	end
 
-	toDestroy, Zlib = Zlib, useStudio and script.Parent:FindFirstChild('Zlib') or game:GetObjects("rbxassetid://10804731440")[1]
+	toDestroy, Zlib = Zlib, useStudio and script.Parent:FindFirstChild('Zlib') or game:GetObjects("rbxassetid://9102092728")[1]
 	if toDestroy and not useStudio then toDestroy:Destroy() end
 
 	buildAttempts = buildAttempts + 1
